@@ -1,0 +1,29 @@
+{% if page.lang == 'es' %}
+  {% assign skills = site.data.data_es.skills %}
+{% else %}
+  {% assign skills = site.data.data.skills %}
+{% endif %}
+{% if skills %}
+<section class="section skills-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ skills.title }}
+  </h2>
+
+  <div class="skillset">
+    {% for skill in skills.toolset %}
+    <div class="item">
+      <h3 class="level-title">{{ skill.name }}</h3>
+      <div class="progress level-bar">
+        <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.level | replace:'%','' }}" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div><!--//item-->
+    {% endfor %}
+  </div>
+
+</section><!--//skills-section-->
+{% endif %}
