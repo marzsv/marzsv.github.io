@@ -16,7 +16,7 @@ sidebar:
   # PROTEGIDO: Email y teléfono están cifrados. Para actualizar, usa tools/encrypt-contact.html
   # email: (cifrado - ver encrypted_contact abajo)
   # phone: (cifrado - ver encrypted_contact abajo)
-  encrypted_contact: "REPLACE_WITH_ENCRYPTED_STRING"
+  encrypted_contact: "35wPcPPxmdchxPJNto5IiQ==:0JQTvtkRwMTLxhKp:xnueiO5s+m5otWJeQiTHGrlAi05u1bk6jxf8QgL6SHktSKkVHu8jnOnWcZtHZ60aQhqlhX+cMZhSp0C9ZDUy6A=="
   timezone: America/El_Salvador
   citizenship:
   website:
