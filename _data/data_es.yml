@@ -60,6 +60,10 @@ career-profile:
     y tecnologías web modernas. Historial comprobado de entrega de soluciones de alta calidad
     para sitios web de alto tráfico incluyendo Mashable, PCMag, Lifehacker y ExtremeTech.
 
+    En los últimos años, he adoptado el desarrollo AI-first integrando herramientas de IA
+    en todo el flujo de trabajo—desde la definición del problema y planificación hasta la implementación.
+    Experiencia con Claude Code, Codex, Gemini CLI y el editor Cursor.
+
 education:
   title: Educación
   info: []
@@ -149,6 +153,9 @@ publications:
 skills:
   title: Habilidades y Competencias
   toolset:
+    - name: Desarrollo AI-First
+      level: 85%
+
     - name: PHP & Laravel
       level: 95%
 
