@@ -1,0 +1,145 @@
+{% if page.lang == 'es' %}
+  {% assign sidebar = site.data.data_es.sidebar %}
+{% else %}
+  {% assign sidebar = site.data.data.sidebar %}
+{% endif %}
+
+<div class="sidebar-wrapper">
+    <div class="profile-container">
+        {% if sidebar.avatar %}
+        <img class="avatar" src="{{ sidebar.avatar }}" alt="" />
+        {% endif %}
+        <h1 class="name">{{ sidebar.name }}</h1>
+        <h3 class="tagline">{{ sidebar.tagline }}</h3>
+    </div><!--//profile-container-->
+
+    <div class="language-switcher container-block" style="text-align: center; padding: 10px 0;">
+        {% if page.lang == 'es' %}
+        <a href="{{ site.baseurl }}/" style="color: #999;">EN</a> | <strong>ES</strong>
+        {% else %}
+        <strong>EN</strong> | <a href="{{ site.baseurl }}/es/" style="color: #999;">ES</a>
+        {% endif %}
+    </div>
+
+    <div class="contact-container container-block">
+        <ul class="list-unstyled contact-list">
+            {% if sidebar.email %}
+            <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: {{ sidebar.email }}">{{ sidebar.email }}</a></li>
+            {% endif %}
+            {% if sidebar.phone %}
+            <li class="phone"><i class="fa-solid fa-phone"></i><a href="tel:{{ sidebar.phone }}">{{ sidebar.phone }}</a></li>
+            {% endif %}
+            {% if sidebar.timezone %}
+            <li class="timezone"><i class="fa-solid fa-clock"></i>{{ sidebar.timezone }}</li>
+            {% endif %}
+            {% if sidebar.website %}
+            <li class="website"><i class="fa-solid fa-link"></i><a href="https://{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a></li>
+            {% endif %}
+            {% if sidebar.linkedin %}
+            <li class="linkedin"><i class="fa-brands fa-linkedin"></i><a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">{{ sidebar.linkedin }}</a></li>
+            {% endif %}
+            {% if sidebar.xing %}
+            <li class="xing"><i class="fa-brands fa-xing"></i><a href="https://www.xing.com/profile/{{ sidebar.xing }}" target="_blank">{{ sidebar.xing }}</a></li>
+            {% endif %}
+            {% if sidebar.github %}
+            <li class="github"><i class="fa-brands fa-github"></i><a href="https://github.com/{{ sidebar.github }}" target="_blank">{{ sidebar.github }}</a></li>
+            {% endif %}
+            {% if sidebar.telegram %}
+            <li class="telegram"><i class="fa-brands fa-telegram"></i><a href="https://telegram.me/{{ sidebar.telegram }}" target="_blank">{{ sidebar.telegram }}</a></li>
+            {% endif %}
+            {% if sidebar.gitlab %}
+            <li class="gitlab"><i class="fa-brands fa-gitlab"></i><a href="https://gitlab.com/{{ sidebar.gitlab }}" target="_blank">{{ sidebar.gitlab }}</a></li>
+            {% endif %}
+            {% if sidebar.bitbucket %}
+            <li class="bitbucket"><i class="fa-brands fa-bitbucket"></i><a href="https://bitbucket.com/{{ sidebar.bitbucket }}" target="_blank">{{ sidebar.bitbucket }}</a></li>
+            {% endif %}
+            {% if sidebar.bluesky %}
+            <li class="bluesky"><i class="fa-brands fa-bluesky"></i><a href="https://bsky.app/profile/{{ sidebar.bluesky }}" target="_blank">{{ sidebar.bluesky }}</a></li>
+            {% endif %}
+            {% if sidebar.twitter %}
+            <li class="twitter"><i class="fa-brands fa-x-twitter"></i><a href="https://twitter.com/{{ sidebar.twitter }}" target="_blank">{{ sidebar.twitter }}</a></li>
+            {% endif %}
+            {% if sidebar.stack-overflow %}
+            <li class="stack-overflow"><i class="fa-brands fa-stack-overflow"></i><a href="https://stackoverflow.com/users/{{ sidebar.stack-overflow }}" target="_blank">{{ sidebar.stack-overflow }}</a></li>
+            {% endif %}
+            {% if sidebar.codewars %}
+            <li class="codewars"><i class="fa-solid fa-code"></i><a href="https://www.codewars.com/users/{{ sidebar.codewars }}" target="_blank">{{ sidebar.codewars }}</a></li>
+            {% endif %}
+            {% if sidebar.goodreads %}
+            <li class="goodreads"><i class="fa-brands fa-goodreads"></i><a href="https://www.goodreads.com/{{ sidebar.goodreads }}" target="_blank">{{ sidebar.goodreads }}</a></li>
+            {% endif %}
+            {% if sidebar.mastodon %}
+            <li class="mastodon"><i class="fa-brands fa-mastodon"></i><a href="{{ sidebar.mastodon }}" target="_blank">Mastodon</a></li>
+            {% endif %}
+            {% if sidebar.hackerrank %}
+            <li class="hackerrank"><i class="fa-brands fa-hackerrank"></i><a href="https://www.hackerrank.com/{{ sidebar.hackerrank }}" target="_blank">{{ sidebar.hackerrank }}</a></li>
+            {% endif %}
+            {% if sidebar.leetcode %}
+            <li class="leetcode"><i class="fa-solid fa-code"></i><a href="https://leetcode.com/{{ sidebar.leetcode }}" target="_blank">{{ sidebar.leetcode }}</a></li>
+            {% endif %}
+            {% if sidebar.pdf %}
+            <li class="pdf"><i class="fa-solid fa-file-pdf"></i><a href="{{ sidebar.pdf }}" target="_blank">Download PDF</a></li>
+            {% endif %}
+        </ul>
+    </div><!--//contact-container-->
+
+    {% if sidebar.education == true %}
+    {% if page.lang == 'es' %}
+      {% assign education = site.data.data_es.education %}
+    {% else %}
+      {% assign education = site.data.data.education %}
+    {% endif %}
+    {% if education.info.size > 0 %}
+    <div class="education-container container-block">
+        <h2 class="container-block-title">{{ education.title }}</h2>
+        {% for edu in education.info %}
+        <div class="item">
+            <h4 class="degree">{{ edu.degree }}</h4>
+            <h5 class="meta">{{ edu.university }}</h5>
+            <div class="time">{{ edu.time }}</div>
+        </div><!--//item-->
+        {% endfor %}
+    </div><!--//education-container-->
+    {% endif %}
+    {% endif %}
+
+    {% if sidebar.languages.info.size > 0 %}
+    <div class="languages-container container-block">
+        <h2 class="container-block-title">{{ sidebar.languages.title }}</h2>
+        <ul class="list-unstyled interests-list">
+            {% for language in sidebar.languages.info %}
+            <li>{{ language.idiom }} <span class="lang-desc">({{ language.level }})</span></li>
+            {% endfor %}
+        </ul>
+    </div><!--//interests-->
+    {% endif %}
+
+    {% if sidebar.interests.info.size > 0 %}
+    <div class="interests-container container-block">
+        <h2 class="container-block-title">{{ sidebar.interests.title }}</h2>
+        <ul class="list-unstyled interests-list">
+            {% for interest in sidebar.interests.info %}
+            <li>
+            {% if interest.link %}
+                <a href="{{ interest.link }}" target="_blank">{{ interest.item }}</a>
+            {% else %}
+                {{ interest.item }}
+            {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div><!--//interests-->
+    {% endif %}
+
+    {% if sidebar.about == true %}
+    {% if page.lang == 'es' %}
+      {% assign career-profile = site.data.data_es.career-profile %}
+    {% else %}
+      {% assign career-profile = site.data.data.career-profile %}
+    {% endif %}
+    <div class="about-container container-block">
+        <h2 class="container-block-title">About</h2>
+        {{ career-profile.summary | markdownify }}
+    </div><!--//about-container-->
+    {% endif %}
+</div><!--//sidebar-wrapper-->
