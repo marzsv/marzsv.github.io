@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Encryption Tool</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 {
+      color: #333;
+      border-bottom: 2px solid #17a2b8;
+      padding-bottom: 10px;
+    }
+    .warning {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 4px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .warning strong {
+      color: #856404;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    input:focus {
+      outline: none;
+      border-color: #17a2b8;
+      box-shadow: 0 0 0 2px rgba(23, 162, 184, 0.2);
+    }
+    button {
+      background: #17a2b8;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background: #138496;
+    }
+    .result {
+      margin-top: 30px;
+      display: none;
+    }
+    .result.show {
+      display: block;
+    }
+    .result h3 {
+      color: #28a745;
+    }
+    .output-box {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      padding: 15px;
+      border-radius: 4px;
+      word-break: break-all;
+      font-family: 'Monaco', 'Menlo', monospace;
+      font-size: 12px;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .copy-btn {
+      background: #6c757d;
+      margin-top: 10px;
+      width: auto;
+      padding: 8px 20px;
+    }
+    .copy-btn:hover {
+      background: #5a6268;
+    }
+    .instructions {
+      background: #e7f3ff;
+      border: 1px solid #b6d4fe;
+      border-radius: 4px;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .instructions h4 {
+      margin-top: 0;
+      color: #0c5460;
+    }
+    .instructions code {
+      background: #f8f9fa;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+    .instructions pre {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Encryption Tool</h1>
+
+  <div class="warning">
+    <strong>Important:</strong> This tool runs entirely in your browser. No data is sent anywhere.
+    Open this file locally (file://) to generate encrypted contact data.
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="your@email.com">
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" placeholder="+1 234 567890">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password (remember this!):</label>
+    <input type="password" id="password" placeholder="Choose a strong password">
+  </div>
+
+  <div class="form-group">
+    <label for="password-confirm">Confirm Password:</label>
+    <input type="password" id="password-confirm" placeholder="Confirm password">
+  </div>
+
+  <button onclick="encryptData()">Generate Encrypted Data</button>
+
+  <div id="result" class="result">
+    <h3>Encrypted Data Generated!</h3>
+    <p>Copy this value and paste it in your <code>_data/data.yml</code> file:</p>
+    <div id="output" class="output-box"></div>
+    <button class="copy-btn" onclick="copyToClipboard()">Copy to Clipboard</button>
+
+    <div class="instructions">
+      <h4>Next Steps:</h4>
+      <ol>
+        <li>Copy the encrypted string above</li>
+        <li>Open <code>_data/data.yml</code></li>
+        <li>Find the <code>sidebar:</code> section</li>
+        <li>Add or update the <code>encrypted_contact:</code> field:
+          <pre>sidebar:
+  # ... other fields ...
+  encrypted_contact: "PASTE_ENCRYPTED_STRING_HERE"</pre>
+        </li>
+        <li>Commit and push your changes</li>
+        <li>Share your password only with people you want to see your contact info</li>
+      </ol>
+    </div>
+  </div>
+
+  <script>
+    // Encryption functions (same as contact-protection.js)
+    async function deriveKey(password, salt) {
+      const encoder = new TextEncoder();
+      const keyMaterial = await crypto.subtle.importKey(
+        'raw',
+        encoder.encode(password),
+        'PBKDF2',
+        false,
+        ['deriveBits', 'deriveKey']
+      );
+
+      return crypto.subtle.deriveKey(
+        {
+          name: 'PBKDF2',
+          salt: salt,
+          iterations: 100000,
+          hash: 'SHA-256'
+        },
+        keyMaterial,
+        { name: 'AES-GCM', length: 256 },
+        false,
+        ['encrypt', 'decrypt']
+      );
+    }
+
+    async function encrypt(data, password) {
+      const encoder = new TextEncoder();
+
+      // Generate random salt and IV
+      const salt = crypto.getRandomValues(new Uint8Array(16));
+      const iv = crypto.getRandomValues(new Uint8Array(12));
+
+      // Derive key
+      const key = await deriveKey(password, salt);
+
+      // Encrypt
+      const ciphertext = await crypto.subtle.encrypt(
+        { name: 'AES-GCM', iv: iv },
+        key,
+        encoder.encode(JSON.stringify(data))
+      );
+
+      // Combine salt:iv:ciphertext as base64
+      const saltB64 = btoa(String.fromCharCode(...salt));
+      const ivB64 = btoa(String.fromCharCode(...iv));
+      const ciphertextB64 = btoa(String.fromCharCode(...new Uint8Array(ciphertext)));
+
+      return `${saltB64}:${ivB64}:${ciphertextB64}`;
+    }
+
+    async function encryptData() {
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const password = document.getElementById('password').value;
+      const passwordConfirm = document.getElementById('password-confirm').value;
+
+      // Validation
+      if (!email && !phone) {
+        alert('Please enter at least email or phone');
+        return;
+      }
+
+      if (!password) {
+        alert('Please enter a password');
+        return;
+      }
+
+      if (password !== passwordConfirm) {
+        alert('Passwords do not match');
+        return;
+      }
+
+      if (password.length < 6) {
+        alert('Password should be at least 6 characters');
+        return;
+      }
+
+      // Build data object
+      const data = {};
+      if (email) data.email = email;
+      if (phone) data.phone = phone;
+
+      try {
+        const encrypted = await encrypt(data, password);
+        document.getElementById('output').textContent = encrypted;
+        document.getElementById('result').classList.add('show');
+      } catch (e) {
+        alert('Encryption failed: ' + e.message);
+      }
+    }
+
+    function copyToClipboard() {
+      const text = document.getElementById('output').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied to clipboard!');
+      }).catch(() => {
+        // Fallback
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        alert('Copied to clipboard!');
+      });
+    }
+  </script>
+</body>
+</html>
