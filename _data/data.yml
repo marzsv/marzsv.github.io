@@ -13,8 +13,10 @@ sidebar:
   avatar:
 
   # Contact information
-  email: [REDACTED]
-  phone: [REDACTED]
+  # PROTECTED: Email and phone are now encrypted. To update, use tools/encrypt-contact.html
+  # email: (encrypted - see encrypted_contact below)
+  # phone: (encrypted - see encrypted_contact below)
+  encrypted_contact: "35wPcPPxmdchxPJNto5IiQ==:0JQTvtkRwMTLxhKp:xnueiO5s+m5otWJeQiTHGrlAi05u1bk6jxf8QgL6SHktSKkVHu8jnOnWcZtHZ60aQhqlhX+cMZhSp0C9ZDUy6A=="
   timezone: America/El_Salvador
   citizenship:
   website:
