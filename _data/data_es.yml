@@ -1,0 +1,183 @@
+#
+# Resume data for Mario Juárez (Spanish version)
+#
+
+sidebar:
+  position: right
+  about: false
+  education: true
+
+  # Profile information
+  name: Mario Juárez
+  tagline: Desarrollador Backend Senior
+  avatar:
+
+  # Contact information
+  email: marz@hey.com
+  phone: +503 79107166
+  timezone: America/El_Salvador
+  citizenship:
+  website:
+  linkedin:
+  xing:
+  github: marzsv
+  telegram:
+  gitlab:
+  bitbucket:
+  bluesky:
+  twitter:
+  stack-overflow:
+  codewars:
+  goodreads:
+  mastodon:
+  hackerrank:
+  leetcode:
+  pdf:
+
+  languages:
+    title: Idiomas
+    info:
+      - idiom: Español
+        level: Nativo
+
+      - idiom: Inglés
+        level: Profesional
+
+  interests:
+    title: Intereses
+    info:
+      - item: Tecnología
+        link:
+
+      - item: Código Abierto
+        link:
+
+career-profile:
+  title: Perfil Profesional
+  summary: |
+    Desarrollador Backend Senior con más de 15 años de experiencia en desarrollo web full-stack.
+    Actualmente trabajando de forma remota para ZiffMedia, especializado en Laravel, frameworks PHP
+    y tecnologías web modernas. Historial comprobado de entrega de soluciones de alta calidad
+    para sitios web de alto tráfico incluyendo Mashable, PCMag, Lifehacker y ExtremeTech.
+
+education:
+  title: Educación
+  info: []
+
+experiences:
+  title: Experiencia Laboral
+  info:
+    - role: Desarrollador Backend Senior
+      time: Sep 2023 - Presente
+      company: ZiffMedia (Remoto)
+      details: |
+        Diseño e implementación de funcionalidades usando Laravel y Laravel Nova.
+        Participación en procesos ETL para Lifehacker.com. Colaboración en
+        proyectos de alto perfil incluyendo Mashable, PCMag y ExtremeTech
+        mientras se mantienen estándares de calidad de código.
+
+    - role: Desarrollador Web Full Stack
+      time: Ago 2020 - Sep 2023
+      company: Luep (Remoto)
+      details: |
+        Desarrollo de funcionalidades de aplicaciones web y APIs para aplicaciones móviles nativas.
+        Uso de HTML5, CSS3, PHP (Laravel/CodeIgniter), JavaScript con jQuery y MySQL.
+        Integración de Pusher para eventos en tiempo real y Firebase para notificaciones push.
+
+    - role: Desarrollador Web Full Stack
+      time: Jul 2019 - Ago 2020
+      company: Ministry Brands
+      details: |
+        Colaboración con product owners en análisis de requerimientos y diseño de soluciones.
+        Trabajo con equipos de UI/UX y móvil. Tecnologías: HTML5, CSS3 (SCSS),
+        framework PHP personalizado, MySQL, jQuery, Docker.
+
+    - role: Desarrollador PHP
+      time: Ene 2019 - Jul 2019
+      company: Appetize
+      details: |
+        Desarrollo de nuevas funcionalidades y mantenimiento de código legacy. Enfoque en código
+        limpio y eficiente usando PHP 5.6/7.2 con framework CodeIgniter junto con MySQL.
+
+    - role: Desarrollador Full Stack Lead / Sysadmin
+      time: Ene 2012 - Dic 2018
+      company: WOWFI (Remoto)
+      details: |
+        Liderazgo en desarrollo de productos de software usando PHP/Symfony2 y Python/Flask.
+        Gestión de infraestructura AWS con automatización Chef/OpsWorks.
+        Mantenimiento de bases de datos SQL y NoSQL.
+
+    - role: Desarrollador IT / DBA
+      time: Dic 2010 - Feb 2012
+      company: Dada Dada & Cía
+      details: |
+        Desarrollo de aplicaciones de escritorio y Rich Internet Applications usando UniPaaS.
+        Gestión de bases de datos MySQL y creación de aplicaciones internas en Visual Basic.
+        Desarrollo de sistema CRM para seguimiento de procesos de ventas.
+
+    - role: Desarrollador IT
+      time: Mar 2009 - Oct 2010
+      company: Transactel SA de CV
+      details: |
+        Desarrollo de aplicaciones web usando PHP y framework Symfony 1.
+        Gestión de bases de datos MySQL y creación de interfaces de usuario con HTML, CSS, JavaScript.
+        Construcción de sistema Time Logger para seguimiento de tareas y tiempo de empleados.
+
+certifications:
+  title: Certificaciones
+  list: []
+
+projects:
+  title: Proyectos
+  intro: >
+    Proyectos de código abierto y trabajo personal.
+  assignments:
+    - title: sv-dte-signer
+      link: "https://github.com/marzsv/sv-dte-signer"
+      tagline: "SDK en PHP para firmar digitalmente DTE (documentos tributarios electrónicos) de El Salvador. Incluye firma local sin servidores externos, firmas JWS RS512 y cobertura completa de pruebas."
+
+oss:
+  title: Contribuciones OSS
+  intro:
+  contributions: []
+
+publications:
+  title: Publicaciones
+  intro:
+  papers: []
+
+skills:
+  title: Habilidades y Competencias
+  toolset:
+    - name: PHP & Laravel
+      level: 95%
+
+    - name: MySQL & Bases de Datos
+      level: 90%
+
+    - name: JavaScript & jQuery
+      level: 85%
+
+    - name: Git & Control de Versiones
+      level: 90%
+
+    - name: PHPUnit Testing
+      level: 85%
+
+    - name: Servicios AWS
+      level: 70%
+
+    - name: Docker
+      level: 70%
+
+    - name: Python & Flask
+      level: 60%
+
+    - name: Symfony
+      level: 65%
+
+    - name: VueJS
+      level: 50%
+
+footer: >
+  Diseñado con <i class="fas fa-heart"></i> por <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
