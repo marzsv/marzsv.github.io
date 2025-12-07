@@ -1,0 +1,183 @@
+#
+# Resume data for Mario Juárez
+#
+
+sidebar:
+  position: right
+  about: false
+  education: true
+
+  # Profile information
+  name: Mario Juárez
+  tagline: Senior Backend Developer
+  avatar:
+
+  # Contact information
+  email: [REDACTED]
+  phone: [REDACTED]
+  timezone: America/El_Salvador
+  citizenship:
+  website:
+  linkedin:
+  xing:
+  github: marzsv
+  telegram:
+  gitlab:
+  bitbucket:
+  bluesky:
+  twitter: "@marzsv"
+  stack-overflow:
+  codewars:
+  goodreads:
+  mastodon:
+  hackerrank:
+  leetcode:
+  pdf:
+
+  languages:
+    title: Languages
+    info:
+      - idiom: Spanish
+        level: Native
+
+      - idiom: English
+        level: Professional
+
+  interests:
+    title: Interests
+    info:
+      - item: Technology
+        link:
+
+      - item: Open Source
+        link:
+
+career-profile:
+  title: Career Profile
+  summary: |
+    Senior Backend Developer with 15+ years of experience in full-stack web development.
+    Currently working remotely for ZiffMedia, specializing in Laravel, PHP frameworks,
+    and modern web technologies. Proven track record of delivering high-quality solutions
+    for high-traffic websites including Mashable, PCMag, Lifehacker, and ExtremeTech.
+
+education:
+  title: Education
+  info: []
+
+experiences:
+  title: Experiences
+  info:
+    - role: Senior Backend Developer
+      time: Sep 2023 - Present
+      company: ZiffMedia (Remote)
+      details: |
+        Designed and implemented features using Laravel and Laravel Nova.
+        Participated in ETL processes for Lifehacker.com. Collaborated on
+        high-profile projects including Mashable, PCMag, and ExtremeTech
+        while maintaining code quality standards.
+
+    - role: Full Stack Web Developer
+      time: Aug 2020 - Sep 2023
+      company: Luep (Remote)
+      details: |
+        Developed web application features and APIs supporting native mobile applications.
+        Utilized HTML5, CSS3, PHP (Laravel/CodeIgniter), JavaScript with jQuery, and MySQL.
+        Integrated Pusher for real-time events and Firebase for push notifications.
+
+    - role: Full Stack Web Developer
+      time: Jul 2019 - Aug 2020
+      company: Ministry Brands
+      details: |
+        Collaborated with product owners on requirement analysis and solution design.
+        Worked with UI/UX and mobile teams. Technologies: HTML5, CSS3 (SCSS),
+        custom PHP framework, MySQL, jQuery, Docker.
+
+    - role: PHP Developer
+      time: Jan 2019 - Jul 2019
+      company: Appetize
+      details: |
+        Developed new features and maintained legacy code. Focused on clean,
+        efficient code using PHP 5.6/7.2 within CodeIgniter framework alongside MySQL.
+
+    - role: Lead Full Stack Developer / Sysadmin
+      time: Jan 2012 - Dec 2018
+      company: WOWFI (Remote)
+      details: |
+        Led software product development using PHP/Symfony2 and Python/Flask.
+        Managed AWS infrastructure with Chef/OpsWorks automation.
+        Maintained SQL and NoSQL databases.
+
+    - role: IT Developer / DBA
+      time: Dec 2010 - Feb 2012
+      company: Dada Dada & Cía
+      details: |
+        Developed desktop and Rich Internet Applications using UniPaaS.
+        Managed MySQL databases and created internal applications in Visual Basic.
+        Developed CRM system for sales process tracking.
+
+    - role: IT Developer
+      time: Mar 2009 - Oct 2010
+      company: Transactel SA de CV
+      details: |
+        Developed web applications using PHP and Symfony 1 framework.
+        Managed MySQL databases and created user interfaces with HTML, CSS, JavaScript.
+        Built Time Logger system for employee task and time tracking.
+
+certifications:
+  title: Certifications
+  list: []
+
+projects:
+  title: Projects
+  intro: >
+    Open source projects and side work.
+  assignments:
+    - title: sv-dte-signer
+      link: "https://github.com/marzsv/sv-dte-signer"
+      tagline: "PHP SDK for digitally signing El Salvador DTE (electronic tax documents). Features local signing without external servers, JWS RS512 signatures, and comprehensive test coverage."
+
+oss:
+  title: OSS Contributions
+  intro:
+  contributions: []
+
+publications:
+  title: Publications
+  intro:
+  papers: []
+
+skills:
+  title: Skills &amp; Proficiency
+  toolset:
+    - name: PHP & Laravel
+      level: 95%
+
+    - name: MySQL & Databases
+      level: 90%
+
+    - name: JavaScript & jQuery
+      level: 85%
+
+    - name: Git & Version Control
+      level: 90%
+
+    - name: PHPUnit Testing
+      level: 85%
+
+    - name: AWS Services
+      level: 70%
+
+    - name: Docker
+      level: 70%
+
+    - name: Python & Flask
+      level: 60%
+
+    - name: Symfony
+      level: 65%
+
+    - name: VueJS
+      level: 50%
+
+footer: >
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

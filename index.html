@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{% if site.data.data.career-profile.summary %}
+{% include career-profile.html %}
+{% endif %}
+
+{% if site.data.data.education.info.size > 0 and site.data.data.sidebar.education != true %}
+{% include education.html %}
+{% endif %}
+
+{% if site.data.data.experiences.info.size > 0 %}
+{% include experiences.html %}
+{% endif %}
+
+{% if site.data.data.certifications.list.size > 0 %}
+{% include certifications.html %}
+{% endif %}
+
+{% if site.data.data.projects.assignments.size > 0 %}
+{% include projects.html %}
+{% endif %}
+
+{% if site.data.data.oss.contributions.size > 0 %}
+{% include oss-contributions.html %}
+{% endif %}
+
+{% if site.data.data.publications.papers.size > 0 %}
+{% include publications.html %}
+{% endif %}
+
+{% if site.data.data.recommendations.list.size > 0 %}
+{% include recommendations.html %}
+{% endif %}
+
+{% if site.data.data.skills.toolset.size > 0 %}
+{% include skills.html %}
+{% endif %}
