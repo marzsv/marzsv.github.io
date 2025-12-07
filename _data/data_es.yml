@@ -60,9 +60,13 @@ career-profile:
     y tecnologías web modernas. Historial comprobado de entrega de soluciones de alta calidad
     para sitios web de alto tráfico incluyendo Mashable, PCMag, Lifehacker y ExtremeTech.
 
-    En los últimos años, he adoptado el desarrollo AI-first integrando herramientas de IA
-    en todo el flujo de trabajo—desde la definición del problema y planificación hasta la implementación.
-    Experiencia con Claude Code, Codex, Gemini CLI y el editor Cursor.
+    Practicante de metodologías AI-first y agentic coding, integrando herramientas de IA
+    en todo el ciclo de desarrollo—desde la definición del problema y planificación hasta
+    la implementación. Experiencia orquestando múltiples agentes de IA simultáneamente,
+    tanto localmente usando Git Worktrees como en entornos en la nube. Competente con
+    Claude Code, GitHub Copilot, Codex, Gemini CLI y el editor Cursor. También utiliza
+    estas herramientas para implementar interfaces UI/UX siguiendo las directrices del
+    equipo de diseño.
 
 education:
   title: Educación
