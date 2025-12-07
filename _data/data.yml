@@ -60,6 +60,13 @@ career-profile:
     and modern web technologies. Proven track record of delivering high-quality solutions
     for high-traffic websites including Mashable, PCMag, Lifehacker, and ExtremeTech.
 
+    Practitioner of AI-first and agentic coding methodologies, integrating AI tools
+    throughout the entire development lifecycle—from problem definition and planning
+    to implementation. Experienced orchestrating multiple AI agents simultaneously,
+    both locally using Git Worktrees and cloud-based environments. Proficient with
+    Claude Code, GitHub Copilot, Codex, Gemini CLI, and Cursor editor. Also leverages
+    these tools to implement UI/UX interfaces following design team guidelines.
+
 education:
   title: Education
   info: []
@@ -149,6 +156,9 @@ publications:
 skills:
   title: Skills &amp; Proficiency
   toolset:
+    - name: AI-First Development
+      level: 85%
+
     - name: PHP & Laravel
       level: 95%
 
