@@ -13,8 +13,10 @@ sidebar:
   avatar:
 
   # Contact information
-  email: marz@hey.com
-  phone: +503 79107166
+  # PROTEGIDO: Email y teléfono están cifrados. Para actualizar, usa tools/encrypt-contact.html
+  # email: (cifrado - ver encrypted_contact abajo)
+  # phone: (cifrado - ver encrypted_contact abajo)
+  encrypted_contact: "REPLACE_WITH_ENCRYPTED_STRING"
   timezone: America/El_Salvador
   citizenship:
   website:

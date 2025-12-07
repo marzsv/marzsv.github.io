@@ -44,3 +44,25 @@ All resume data is centralized in `_data/data.yml`. Edit this file to update:
 ### Print Version
 
 The theme provides a printable version at `/print` URL.
+
+### Contact Protection (AES-256 Encryption)
+
+Sensitive contact information (email, phone) is encrypted and requires a password to view.
+
+**How it works:**
+1. Contact data is encrypted with AES-256-GCM in the browser
+2. Visitors see a "Unlock contact info" button
+3. With the correct password, email and phone are decrypted and displayed
+4. Session storage keeps it unlocked during the browser session
+
+**To configure/update protected contact info:**
+
+1. Open `tools/encrypt-contact.html` in your browser (locally, file://)
+2. Enter your email and phone
+3. Choose a password (share this only with people you want to see your contact)
+4. Click "Generate Encrypted Data"
+5. Copy the generated string
+6. Paste it in `_data/data.yml` and `_data/data_es.yml` as `encrypted_contact` value
+7. Commit and push
+
+**To disable protection:** Remove `encrypted_contact` and restore `email`/`phone` fields directly.
