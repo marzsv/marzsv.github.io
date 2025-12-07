@@ -4,6 +4,23 @@
   {% assign sidebar = site.data.data.sidebar %}
 {% endif %}
 
+<style>
+/* Fix: Move print/PDF buttons to bottom on mobile to avoid overlapping name */
+@media (max-width: 767px) {
+  .print-button,
+  .pdf-button {
+    top: auto;
+    bottom: 20px;
+  }
+  .print-button {
+    right: 100px;
+  }
+  .pdf-button {
+    right: 20px;
+  }
+}
+</style>
+
 <div class="sidebar-wrapper">
     <div class="profile-container">
         {% if sidebar.avatar %}
