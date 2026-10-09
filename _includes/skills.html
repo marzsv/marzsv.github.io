@@ -5,6 +5,10 @@
 {% endif %}
 {% if skills %}
 <section class="section skills-section">
+  <style>
+    /* Grouped skills sit beside the floated title instead of wrapping under it */
+    .skills-section .skill-items { overflow: hidden; margin: 0; }
+  </style>
 
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
@@ -18,9 +22,13 @@
     {% for skill in skills.toolset %}
     <div class="item">
       <h3 class="level-title">{{ skill.name }}</h3>
+      {% if skill.items %}
+      <p class="skill-items">{{ skill.items }}</p>
+      {% else %}
       <div class="progress level-bar">
         <div class="progress-bar theme-progress-bar" role="progressbar" style="width: {{ skill.level }}" aria-valuenow="{{ skill.level | replace:'%','' }}" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
+      {% endif %}
     </div><!--//item-->
     {% endfor %}
   </div>

@@ -58,19 +58,16 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Senior Backend Developer with 15+ years of experience in full-stack web development.
-    Currently working remotely for ZiffMedia, specializing in Laravel, PHP frameworks,
-    and modern web technologies. Proven track record of delivering high-quality solutions
-    for high-traffic websites including Mashable, PCMag, Lifehacker, and ExtremeTech.
-    Also founder and lead developer of Fiscalízame, an e-invoicing and point-of-sale
-    SaaS for businesses in El Salvador, built and run end to end.
+    Senior Backend Developer with 15+ years building web applications, specialized in PHP
+    and Laravel. Currently a remote contractor for ZiffMedia, working on high-traffic sites
+    such as Mashable, PCMag, Lifehacker and ExtremeTech. Founder and lead developer of
+    Fiscalízame, an e-invoicing and point-of-sale SaaS for businesses in El Salvador,
+    designed, built and run end to end.
 
-    Practitioner of AI-first and agentic coding methodologies, integrating AI tools
-    throughout the entire development lifecycle—from problem definition and planning
-    to implementation. Experienced orchestrating multiple AI agents simultaneously,
-    both locally using Git Worktrees and cloud-based environments. Proficient with
-    Claude Code, GitHub Copilot, Codex, Gemini CLI, and Cursor editor. Also leverages
-    these tools to implement UI/UX interfaces following design team guidelines.
+    AI-first practitioner: uses coding agents (Claude Code, Codex, GitHub Copilot, Cursor)
+    throughout planning, implementation and review, often orchestrating several in parallel,
+    and builds AI features into products, from multi-provider LLM integrations to
+    per-call cost control.
 
 education:
   title: Education
@@ -132,17 +129,15 @@ experiences:
       time: Dec 2010 - Feb 2012
       company: Dada Dada & Cía
       details: |
-        Developed desktop and Rich Internet Applications using UniPaaS.
-        Managed MySQL databases and created internal applications in Visual Basic.
-        Developed CRM system for sales process tracking.
+        Built desktop and web applications with UniPaaS, a sales-tracking CRM and internal
+        Visual Basic tools; managed MySQL databases.
 
     - role: IT Developer
       time: Mar 2009 - Oct 2010
       company: Transactel SA de CV
       details: |
-        Developed web applications using PHP and Symfony 1 framework.
-        Managed MySQL databases and created user interfaces with HTML, CSS, JavaScript.
-        Built Time Logger system for employee task and time tracking.
+        Built web applications with PHP and Symfony 1, including an employee time-tracking
+        system; managed MySQL databases.
 
 certifications:
   title: Certifications
@@ -185,40 +180,31 @@ publications:
   papers: []
 
 skills:
-  title: Skills &amp; Proficiency
+  title: Skills
   toolset:
-    - name: AI-First Development
-      level: 85%
+    - name: Backend
+      items: PHP, Laravel, Livewire, Laravel Nova, Symfony, CodeIgniter, Python (Flask)
 
-    - name: PHP & Laravel
-      level: 95%
+    - name: Frontend
+      items: TypeScript, JavaScript, React, Next.js, Alpine.js, Tailwind CSS, Vue.js
 
-    - name: MySQL & Databases
-      level: 90%
+    - name: Databases
+      items: PostgreSQL, MySQL, Supabase, Drizzle ORM, Eloquent
 
-    - name: JavaScript & jQuery
-      level: 85%
+    - name: AI & LLMs
+      items: Claude, Gemini and Grok APIs, structured output, prompt caching, cost tracking
 
-    - name: Git & Version Control
-      level: 90%
+    - name: AI-first development
+      items: Claude Code, Codex, GitHub Copilot, Cursor, Gemini CLI, parallel agents with Git worktrees
 
-    - name: PHPUnit Testing
-      level: 85%
+    - name: Testing
+      items: Pest, PHPUnit, Vitest, Playwright
 
-    - name: AWS Services
-      level: 70%
+    - name: DevOps & cloud
+      items: Docker, AWS, GitHub Actions, Git, Linux
 
-    - name: Docker
-      level: 70%
-
-    - name: Python & Flask
-      level: 60%
-
-    - name: Symfony
-      level: 65%
-
-    - name: VueJS
-      level: 50%
+    - name: Integrations & mobile
+      items: Gumroad, RevenueCat, Pusher, Firebase, Mailgun, PWA, Capacitor (iOS)
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

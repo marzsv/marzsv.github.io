@@ -58,20 +58,16 @@ sidebar:
 career-profile:
   title: Perfil Profesional
   summary: |
-    Desarrollador Backend Senior con más de 15 años de experiencia en desarrollo web full-stack.
-    Actualmente trabajando de forma remota para ZiffMedia, especializado en Laravel, frameworks PHP
-    y tecnologías web modernas. Historial comprobado de entrega de soluciones de alta calidad
-    para sitios web de alto tráfico incluyendo Mashable, PCMag, Lifehacker y ExtremeTech.
-    Además, fundador y desarrollador principal de Fiscalízame, un SaaS de facturación
-    electrónica y punto de venta para negocios de El Salvador, construido y operado de punta a punta.
+    Desarrollador Backend Senior con más de 15 años construyendo aplicaciones web,
+    especializado en PHP y Laravel. Actualmente contratista remoto para ZiffMedia, en sitios
+    de alto tráfico como Mashable, PCMag, Lifehacker y ExtremeTech. Fundador y desarrollador
+    principal de Fiscalízame, un SaaS de facturación electrónica y punto de venta para
+    negocios de El Salvador, diseñado, construido y operado de punta a punta.
 
-    Practicante de metodologías AI-first y agentic coding, integrando herramientas de IA
-    en todo el ciclo de desarrollo—desde la definición del problema y planificación hasta
-    la implementación. Experiencia orquestando múltiples agentes de IA simultáneamente,
-    tanto localmente usando Git Worktrees como en entornos en la nube. Competente con
-    Claude Code, GitHub Copilot, Codex, Gemini CLI y el editor Cursor. También utiliza
-    estas herramientas para implementar interfaces UI/UX siguiendo las directrices del
-    equipo de diseño.
+    Practicante del desarrollo AI-first: usa agentes de programación (Claude Code, Codex,
+    GitHub Copilot, Cursor) en la planificación, la implementación y la revisión, a menudo
+    varios en paralelo, e integra funciones de IA en productos, desde integraciones con
+    varios proveedores de LLM hasta el control de costo por llamada.
 
 education:
   title: Educación
@@ -133,17 +129,15 @@ experiences:
       time: Dic 2010 - Feb 2012
       company: Dada Dada & Cía
       details: |
-        Desarrollo de aplicaciones de escritorio y Rich Internet Applications usando UniPaaS.
-        Gestión de bases de datos MySQL y creación de aplicaciones internas en Visual Basic.
-        Desarrollo de sistema CRM para seguimiento de procesos de ventas.
+        Desarrollo de aplicaciones de escritorio y web con UniPaaS, un CRM de seguimiento de
+        ventas y herramientas internas en Visual Basic; gestión de bases de datos MySQL.
 
     - role: Desarrollador IT
       time: Mar 2009 - Oct 2010
       company: Transactel SA de CV
       details: |
-        Desarrollo de aplicaciones web usando PHP y framework Symfony 1.
-        Gestión de bases de datos MySQL y creación de interfaces de usuario con HTML, CSS, JavaScript.
-        Construcción de sistema Time Logger para seguimiento de tareas y tiempo de empleados.
+        Desarrollo de aplicaciones web con PHP y Symfony 1, incluido un sistema de registro
+        de tiempo de empleados; gestión de bases de datos MySQL.
 
 certifications:
   title: Certificaciones
@@ -186,40 +180,31 @@ publications:
   papers: []
 
 skills:
-  title: Habilidades y Competencias
+  title: Habilidades
   toolset:
-    - name: Desarrollo AI-First
-      level: 85%
+    - name: Backend
+      items: PHP, Laravel, Livewire, Laravel Nova, Symfony, CodeIgniter, Python (Flask)
 
-    - name: PHP & Laravel
-      level: 95%
+    - name: Frontend
+      items: TypeScript, JavaScript, React, Next.js, Alpine.js, Tailwind CSS, Vue.js
 
-    - name: MySQL & Bases de Datos
-      level: 90%
+    - name: Bases de datos
+      items: PostgreSQL, MySQL, Supabase, Drizzle ORM, Eloquent
 
-    - name: JavaScript & jQuery
-      level: 85%
+    - name: IA y LLMs
+      items: APIs de Claude, Gemini y Grok, salida estructurada, caché de prompts, control de costos
 
-    - name: Git & Control de Versiones
-      level: 90%
+    - name: Desarrollo AI-first
+      items: Claude Code, Codex, GitHub Copilot, Cursor, Gemini CLI, agentes en paralelo con Git worktrees
 
-    - name: PHPUnit Testing
-      level: 85%
+    - name: Pruebas
+      items: Pest, PHPUnit, Vitest, Playwright
 
-    - name: Servicios AWS
-      level: 70%
+    - name: DevOps y nube
+      items: Docker, AWS, GitHub Actions, Git, Linux
 
-    - name: Docker
-      level: 70%
-
-    - name: Python & Flask
-      level: 60%
-
-    - name: Symfony
-      level: 65%
-
-    - name: VueJS
-      level: 50%
+    - name: Integraciones y móvil
+      items: Gumroad, RevenueCat, Pusher, Firebase, Mailgun, PWA, Capacitor (iOS)
 
 footer: >
   Diseñado con <i class="fas fa-heart"></i> por <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
