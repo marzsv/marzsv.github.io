@@ -125,8 +125,9 @@ experiences:
       time: Jan 2019 - Jul 2019
       company: Appetize (via Avantica)
       details: |
-        Developed new features and maintained legacy code. Focused on clean,
-        efficient code using PHP 5.6/7.2 within CodeIgniter framework alongside MySQL.
+        Fixed bugs and built new features in the back-office application of a point-of-sale
+        platform: products and catalog, inventory, price lists and customers. PHP 5.6/7.2,
+        CodeIgniter and MySQL.
 
     - role: Lead Full Stack Developer / Sysadmin
       time: Jan 2012 - Dec 2018
