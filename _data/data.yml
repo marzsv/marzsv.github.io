@@ -139,8 +139,25 @@ certifications:
 projects:
   title: Projects
   intro: >
-    Open source projects and side work.
+    Open source projects and products of my own. Some of them live in private
+    repositories, so only their public website is linked.
+  private_label: Private repository
+  stack_label: "Stack:"
   assignments:
+    - title: Fiscalízame
+      link: "https://fiscaliza.me"
+      private: true
+      tagline: "Multi-tenant e-invoicing (DTE) SaaS for Salvadoran businesses: issuing, signing and transmitting documents to the Ministry of Finance under Normativa DTE 2.0, plus point of sale, inventory, price lists, expenses and VAT / income-tax reports."
+      stack: "PHP 8.4, Laravel 13, Livewire, Alpine.js, Tailwind CSS, PostgreSQL, Pest, Docker"
+    - title: Glosia
+      link: "https://glosia.app"
+      private: true
+      tagline: "Language-learning app built on reading: import a book or text and every word becomes interactive, with contextual AI translation and spaced-repetition review (SM-2). Offline-capable PWA and iOS app."
+      stack: "Next.js, React, TypeScript, Supabase, Drizzle ORM, Tailwind CSS, Capacitor, Claude / Gemini / Grok"
+    - title: "@marzlabs/ai-providers"
+      private: true
+      tagline: "npm package that unifies Anthropic, Google and xAI behind a single interface: the app picks a model and reasoning effort without touching SDKs, with token and cost tracking per call. Used by Glosia."
+      stack: "TypeScript, Node.js, Vitest, Anthropic / Google GenAI / OpenAI SDKs"
     - title: sv-dte-signer
       link: "https://github.com/marzsv/sv-dte-signer"
       tagline: "PHP SDK for digitally signing El Salvador DTE (electronic tax documents). Features local signing without external servers, JWS RS512 signatures, and comprehensive test coverage."
