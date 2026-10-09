@@ -133,9 +133,12 @@ experiences:
       time: Ene 2012 - Dic 2018
       company: WOWFI (Remoto)
       details: |
-        Liderazgo en desarrollo de productos de software usando PHP/Symfony2 y Python/Flask.
-        Gestión de infraestructura AWS con automatización Chef/OpsWorks.
-        Mantenimiento de bases de datos SQL y NoSQL.
+        Liderazgo de un equipo de cuatro personas en una red de Wi-Fi público gratuito para
+        ciudades y locales como restaurantes, cafeterías y aeropuertos, con un portal cautivo
+        dinámico desde el que los administradores publicaban publicidad segmentada. Migración
+        de la aplicación de MySQL a MongoDB, reemplazo de FreeRADIUS por un servidor de
+        autenticación open source adaptado al producto y automatización de la infraestructura
+        en AWS con Chef/OpsWorks. PHP (Symfony2) y Python (Flask).
 
     - role: Desarrollador IT / DBA
       time: Dic 2010 - Feb 2012
@@ -201,7 +204,7 @@ skills:
       items: TypeScript, JavaScript, React, Next.js, Alpine.js, Tailwind CSS, Vue.js
 
     - name: Bases de datos
-      items: PostgreSQL, MySQL, Supabase, Drizzle ORM, Eloquent
+      items: PostgreSQL, MySQL, MongoDB, Supabase, Drizzle ORM, Eloquent
 
     - name: IA y LLMs
       items: APIs de Claude, Gemini y Grok, salida estructurada, caché de prompts, control de costos
@@ -213,7 +216,7 @@ skills:
       items: Pest, PHPUnit, Vitest, Playwright
 
     - name: DevOps y nube
-      items: Docker, AWS, GitHub Actions, Git, Linux
+      items: Docker, AWS, Chef, GitHub Actions, Git, Linux
 
     - name: Integraciones y móvil
       items: Gumroad, RevenueCat, Pusher, Firebase, Mailgun, PWA, Capacitor (iOS)
