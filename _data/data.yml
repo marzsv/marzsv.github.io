@@ -66,7 +66,8 @@ career-profile:
   summary: |
     Senior Backend Developer with 15+ years of full-stack web development, specialized in
     PHP and Laravel. Currently a remote contractor for ZiffMedia, working on high-traffic sites
-    such as Mashable, PCMag, Lifehacker and ExtremeTech. Founder and lead developer of
+    such as PCMag, CNET and ZDNet, as well as Mashable, Lifehacker and ExtremeTech. Founder
+    and lead developer of
     Fiscalízame, an e-invoicing and point-of-sale SaaS for businesses in El Salvador,
     designed, built and run end to end.
 
@@ -97,11 +98,12 @@ experiences:
       time: Sep 2023 - Present
       company: ZiffMedia (Remote, via InAllMedia)
       details: |
-        When the company acquired Lifehacker's content without its platform, migrated the
-        entire archive through an ETL pipeline (extraction, transformation and loading) and
-        built the new platform on Laravel: a Nova-based CMS for the editorial team and the
-        public website. Also worked on other high-traffic sites, including Mashable, PCMag
-        and ExtremeTech.
+        Works on the company's largest sites: PCMag and, since their acquisition, CNET and
+        ZDNet, including their recent platform migrations. When the company acquired
+        Lifehacker's content without its platform, migrated the entire archive through an ETL
+        pipeline (extraction, transformation and loading) and built the new platform on
+        Laravel: a Nova-based CMS for the editorial team and the public website. Also worked
+        on Mashable and ExtremeTech.
 
     - role: Full Stack Web Developer (Independent Contractor)
       time: Aug 2020 - Sep 2023
