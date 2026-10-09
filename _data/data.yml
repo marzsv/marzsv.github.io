@@ -64,16 +64,18 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Senior Backend Developer with 15+ years building web applications, specialized in PHP
-    and Laravel. Currently a remote contractor for ZiffMedia, working on high-traffic sites
+    Senior Backend Developer with 15+ years of full-stack web development, specialized in
+    PHP and Laravel. Currently a remote contractor for ZiffMedia, working on high-traffic sites
     such as Mashable, PCMag, Lifehacker and ExtremeTech. Founder and lead developer of
     Fiscalízame, an e-invoicing and point-of-sale SaaS for businesses in El Salvador,
     designed, built and run end to end.
 
-    AI-first practitioner: uses coding agents (Claude Code, Codex, GitHub Copilot, Cursor)
-    throughout planning, implementation and review, often orchestrating several in parallel,
-    and builds AI features into products, from multi-provider LLM integrations to
-    per-call cost control.
+    AI-first practitioner: uses coding agents (Claude Code, Codex, GitHub Copilot, Gemini CLI,
+    Cursor) across the whole cycle, from problem definition and planning to implementation
+    and review, often orchestrating several in parallel, both locally with Git worktrees and
+    in cloud environments. Also uses them to implement UI/UX interfaces that follow the
+    design team's guidelines, and builds AI features into products, from multi-provider LLM
+    integrations to per-call cost control.
 
 education:
   title: Education
@@ -107,9 +109,10 @@ experiences:
       details: |
         Mainly responsible for the backend of a social network for closed communities such as
         universities and churches: the API behind its native mobile apps, built with PHP
-        (Laravel, CodeIgniter) and MySQL. Found and fixed performance bottlenecks, mostly
-        database queries that were not using indexes. Integrated Pusher for real-time events
-        and Firebase for push notifications.
+        (Laravel, CodeIgniter) and MySQL, plus features for its web application (JavaScript,
+        jQuery). Found and fixed performance bottlenecks, mostly database queries that were not
+        using indexes. Integrated Pusher for real-time events and Firebase for push
+        notifications.
 
     - role: Full Stack Web Developer (Contractor)
       time: Jul 2019 - Aug 2020
@@ -118,16 +121,17 @@ experiences:
         Worked on a web application for managing churches and communities: member attendance,
         donations, community announcements and reporting. Built its reporting system, which
         included each piece of information conditionally depending on what the report was for,
-        and shipped new features and bug fixes alongside product owners and the UI/UX and
-        mobile teams. Custom PHP framework, MySQL and Docker.
+        and shipped new features and bug fixes. Took part in requirements analysis and solution
+        design with product owners, working alongside the UI/UX and mobile teams. Custom PHP
+        framework, MySQL, SCSS, jQuery and Docker.
 
     - role: PHP Developer (Contractor)
       time: Jan 2019 - Jul 2019
       company: Appetize (via Avantica)
       details: |
-        Fixed bugs and built new features in the back-office application of a point-of-sale
-        platform: products and catalog, inventory, price lists and customers. PHP 5.6/7.2,
-        CodeIgniter and MySQL.
+        Fixed bugs, maintained legacy code and built new features in the back-office
+        application of a point-of-sale platform: products and catalog, inventory, price lists
+        and customers. PHP 5.6/7.2, CodeIgniter and MySQL.
 
     - role: Lead Full Stack Developer / Sysadmin
       time: Jan 2012 - Dec 2018
@@ -150,8 +154,9 @@ experiences:
       time: Mar 2009 - Oct 2010
       company: Transactel SA de CV
       details: |
-        Built web applications with PHP and Symfony 1, including an employee time-tracking
-        system; managed MySQL databases.
+        Built web applications with PHP and Symfony 1, including a system to track employees'
+        tasks and time, with user interfaces in HTML, CSS and JavaScript; managed MySQL
+        databases.
 
 certifications:
   title: Certifications
@@ -200,7 +205,7 @@ skills:
       items: PHP, Laravel, Livewire, Laravel Nova, Symfony, CodeIgniter, Python (Flask)
 
     - name: Frontend
-      items: TypeScript, JavaScript, React, Next.js, Alpine.js, Tailwind CSS, Vue.js
+      items: TypeScript, JavaScript, React, Next.js, Alpine.js, Tailwind CSS, Vue.js, jQuery
 
     - name: Databases
       items: PostgreSQL, MySQL, MongoDB, Supabase, Drizzle ORM, Eloquent

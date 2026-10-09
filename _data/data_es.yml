@@ -64,16 +64,19 @@ sidebar:
 career-profile:
   title: Perfil Profesional
   summary: |
-    Desarrollador Backend Senior con más de 15 años construyendo aplicaciones web,
-    especializado en PHP y Laravel. Actualmente contratista remoto para ZiffMedia, en sitios
+    Desarrollador Backend Senior con más de 15 años de experiencia en desarrollo web
+    full-stack, especializado en PHP y Laravel. Actualmente contratista remoto para ZiffMedia, en sitios
     de alto tráfico como Mashable, PCMag, Lifehacker y ExtremeTech. Fundador y desarrollador
     principal de Fiscalízame, un SaaS de facturación electrónica y punto de venta para
     negocios de El Salvador, diseñado, construido y operado de punta a punta.
 
     Practicante del desarrollo AI-first: usa agentes de programación (Claude Code, Codex,
-    GitHub Copilot, Cursor) en la planificación, la implementación y la revisión, a menudo
-    varios en paralelo, e integra funciones de IA en productos, desde integraciones con
-    varios proveedores de LLM hasta el control de costo por llamada.
+    GitHub Copilot, Gemini CLI, Cursor) en todo el ciclo, desde la definición del problema y
+    la planificación hasta la implementación y la revisión, a menudo varios en paralelo,
+    tanto localmente con Git worktrees como en entornos en la nube. También los usa para
+    implementar interfaces UI/UX siguiendo las directrices del equipo de diseño, e integra
+    funciones de IA en productos, desde integraciones con varios proveedores de LLM hasta el
+    control de costo por llamada.
 
 education:
   title: Educación
@@ -107,9 +110,10 @@ experiences:
       details: |
         Responsable principal del backend de una red social para comunidades cerradas, como
         universidades e iglesias: la API que consumían sus aplicaciones móviles nativas, con PHP
-        (Laravel, CodeIgniter) y MySQL. Detección y corrección de cuellos de botella de
-        rendimiento, sobre todo consultas a la base de datos que no usaban índices. Integración
-        de Pusher para eventos en tiempo real y Firebase para notificaciones push.
+        (Laravel, CodeIgniter) y MySQL, además de funcionalidades de su aplicación web
+        (JavaScript, jQuery). Detección y corrección de cuellos de botella de rendimiento, sobre
+        todo consultas a la base de datos que no usaban índices. Integración de Pusher para
+        eventos en tiempo real y Firebase para notificaciones push.
 
     - role: Desarrollador Web Full Stack (Contratista)
       time: Jul 2019 - Ago 2020
@@ -118,16 +122,18 @@ experiences:
         Desarrollo de una aplicación web para administrar iglesias y comunidades: asistencia de
         miembros, donaciones, anuncios y reportería. Construcción de su sistema de reportes, que
         incluía cada dato de forma condicional según lo que se buscaba, además de nuevas
-        funcionalidades y corrección de errores junto a product owners y los equipos de UI/UX y
-        móvil. Framework PHP propio, MySQL y Docker.
+        funcionalidades y corrección de errores. Participación en el análisis de requerimientos
+        y el diseño de soluciones con los product owners, junto a los equipos de UI/UX y móvil.
+        Framework PHP propio, MySQL, SCSS, jQuery y Docker.
 
     - role: Desarrollador PHP (Contratista)
       time: Ene 2019 - Jul 2019
       company: Appetize (vía Avantica)
       details: |
-        Corrección de errores y desarrollo de nuevas funcionalidades en la aplicación
-        administrativa de una plataforma de punto de venta: productos y catálogo, inventario,
-        listas de precios y clientes. PHP 5.6/7.2, CodeIgniter y MySQL.
+        Corrección de errores, mantenimiento de código legado y desarrollo de nuevas
+        funcionalidades en la aplicación administrativa de una plataforma de punto de venta:
+        productos y catálogo, inventario, listas de precios y clientes. PHP 5.6/7.2, CodeIgniter
+        y MySQL.
 
     - role: Desarrollador Full Stack Lead / Sysadmin
       time: Ene 2012 - Dic 2018
@@ -151,8 +157,9 @@ experiences:
       time: Mar 2009 - Oct 2010
       company: Transactel SA de CV
       details: |
-        Desarrollo de aplicaciones web con PHP y Symfony 1, incluido un sistema de registro
-        de tiempo de empleados; gestión de bases de datos MySQL.
+        Desarrollo de aplicaciones web con PHP y Symfony 1, incluido un sistema de seguimiento
+        de tareas y tiempo de los empleados, con interfaces en HTML, CSS y JavaScript; gestión
+        de bases de datos MySQL.
 
 certifications:
   title: Certificaciones
@@ -201,7 +208,7 @@ skills:
       items: PHP, Laravel, Livewire, Laravel Nova, Symfony, CodeIgniter, Python (Flask)
 
     - name: Frontend
-      items: TypeScript, JavaScript, React, Next.js, Alpine.js, Tailwind CSS, Vue.js
+      items: TypeScript, JavaScript, React, Next.js, Alpine.js, Tailwind CSS, Vue.js, jQuery
 
     - name: Bases de datos
       items: PostgreSQL, MySQL, MongoDB, Supabase, Drizzle ORM, Eloquent
