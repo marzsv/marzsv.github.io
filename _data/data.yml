@@ -152,7 +152,7 @@ projects:
     - title: Glosia
       link: "https://glosia.app"
       private: true
-      tagline: "Language-learning app built on reading: import a book or text and every word becomes interactive, with contextual AI translation and spaced-repetition review (SM-2). Offline-capable PWA and iOS app, with subscription payments integrated through Gumroad on the web and the App Store via RevenueCat, and a per-account AI budget to keep costs under control."
+      tagline: "Language-learning app built on reading: import a book or text and every word becomes interactive, with contextual AI translation and spaced-repetition review (SM-2). Offline-capable PWA with subscription payments integrated through Gumroad and a per-account AI budget to keep costs under control; iOS app (Capacitor, in-app purchases via RevenueCat) in development."
       stack: "Next.js, React, TypeScript, Supabase, Drizzle ORM, Tailwind CSS, Capacitor, Claude / Gemini / Grok"
     - title: "@marzlabs/ai-providers"
       private: true
