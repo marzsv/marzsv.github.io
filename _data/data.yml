@@ -49,10 +49,16 @@ sidebar:
   interests:
     title: Interests
     info:
-      - item: Technology
+      - item: Language learning
         link:
 
-      - item: Open Source
+      - item: Personal finance
+        link:
+
+      - item: Building software products
+        link:
+
+      - item: Artificial intelligence
         link:
 
 career-profile:
@@ -89,10 +95,11 @@ experiences:
       time: Sep 2023 - Present
       company: ZiffMedia (Remote, via InAllMedia)
       details: |
-        Designed and implemented features using Laravel and Laravel Nova.
-        Participated in ETL processes for Lifehacker.com. Collaborated on
-        high-profile projects including Mashable, PCMag, and ExtremeTech
-        while maintaining code quality standards.
+        When the company acquired Lifehacker's content without its platform, migrated the
+        entire archive through an ETL pipeline (extraction, transformation and loading) and
+        built the new platform on Laravel: a Nova-based CMS for the editorial team and the
+        public website. Also worked on other high-traffic sites, including Mashable, PCMag
+        and ExtremeTech.
 
     - role: Full Stack Web Developer (Independent Contractor)
       time: Aug 2020 - Sep 2023
