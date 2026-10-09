@@ -148,16 +148,16 @@ projects:
     - title: Fiscalízame
       link: "https://fiscaliza.me"
       private: true
-      tagline: "SaaS multiempresa de facturación electrónica (DTE) para negocios salvadoreños: emisión, firma y transmisión a Hacienda bajo la Normativa DTE 2.0, punto de venta, inventario, listas de precios, gastos y reportes de IVA e ISR."
+      tagline: "SaaS multiempresa de facturación electrónica (DTE) para negocios salvadoreños: emisión, firma y transmisión a Hacienda, punto de venta, inventario, listas de precios, gastos y reportes de IVA e ISR. Soporta en paralelo la API v1 y la Normativa DTE 2.0, con arquitectura modular y documentos validados contra los esquemas oficiales mediante pruebas golden master. Firma con sv-dte-signer."
       stack: "PHP 8.4, Laravel 13, Livewire, Alpine.js, Tailwind CSS, PostgreSQL, Pest, Docker"
     - title: Glosia
       link: "https://glosia.app"
       private: true
-      tagline: "App para aprender idiomas leyendo: importa un libro o texto y cada palabra se vuelve interactiva, con traducción contextual por IA y repaso con repetición espaciada (SM-2). PWA que funciona sin conexión y app para iOS."
+      tagline: "App para aprender idiomas leyendo: importa un libro o texto y cada palabra se vuelve interactiva, con traducción contextual por IA y repaso con repetición espaciada (SM-2). PWA que funciona sin conexión y app para iOS, con pagos de suscripciones integrados con Gumroad en la web y App Store vía RevenueCat, y presupuesto de IA por cuenta para controlar costos."
       stack: "Next.js, React, TypeScript, Supabase, Drizzle ORM, Tailwind CSS, Capacitor, Claude / Gemini / Grok"
     - title: "@marzlabs/ai-providers"
       private: true
-      tagline: "Paquete npm que unifica Anthropic, Google y xAI detrás de una sola interfaz: la app elige modelo y nivel de esfuerzo sin tocar SDKs, con registro de tokens y costo por llamada. Lo usa Glosia."
+      tagline: "Paquete npm que unifica Anthropic, Google y xAI detrás de una sola interfaz: la app elige modelo y nivel de esfuerzo sin tocar SDKs, mientras el paquete resuelve la salida estructurada, el caché de prompts y los rechazos de cada proveedor, con registro de tokens y costo por llamada. Lo usa Glosia."
       stack: "TypeScript, Node.js, Vitest, SDKs de Anthropic / Google GenAI / OpenAI"
     - title: sv-dte-signer
       link: "https://github.com/marzsv/sv-dte-signer"
