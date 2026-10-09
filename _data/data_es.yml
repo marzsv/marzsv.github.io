@@ -77,34 +77,34 @@ education:
 experiences:
   title: Experiencia Laboral
   info:
-    - role: Desarrollador Backend Senior
+    - role: Desarrollador Backend Senior (Contratista)
       time: Sep 2023 - Presente
-      company: ZiffMedia (Remoto)
+      company: ZiffMedia (Remoto, vía InAllMedia)
       details: |
         Diseño e implementación de funcionalidades usando Laravel y Laravel Nova.
         Participación en procesos ETL para Lifehacker.com. Colaboración en
         proyectos de alto perfil incluyendo Mashable, PCMag y ExtremeTech
         mientras se mantienen estándares de calidad de código.
 
-    - role: Desarrollador Web Full Stack
+    - role: Desarrollador Web Full Stack (Contratista Independiente)
       time: Ago 2020 - Sep 2023
-      company: Luep (Remoto)
+      company: Luep (Remoto, Texas, EE. UU.)
       details: |
         Desarrollo de funcionalidades de aplicaciones web y APIs para aplicaciones móviles nativas.
         Uso de HTML5, CSS3, PHP (Laravel/CodeIgniter), JavaScript con jQuery y MySQL.
         Integración de Pusher para eventos en tiempo real y Firebase para notificaciones push.
 
-    - role: Desarrollador Web Full Stack
+    - role: Desarrollador Web Full Stack (Contratista)
       time: Jul 2019 - Ago 2020
-      company: Ministry Brands
+      company: Ministry Brands (vía InAllMedia)
       details: |
         Colaboración con product owners en análisis de requerimientos y diseño de soluciones.
         Trabajo con equipos de UI/UX y móvil. Tecnologías: HTML5, CSS3 (SCSS),
         framework PHP personalizado, MySQL, jQuery, Docker.
 
-    - role: Desarrollador PHP
+    - role: Desarrollador PHP (Contratista)
       time: Ene 2019 - Jul 2019
-      company: Appetize
+      company: Appetize (vía Avantica)
       details: |
         Desarrollo de nuevas funcionalidades y mantenimiento de código legacy. Enfoque en código
         limpio y eficiente usando PHP 5.6/7.2 con framework CodeIgniter junto con MySQL.
