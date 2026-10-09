@@ -105,9 +105,11 @@ experiences:
       time: Ago 2020 - Sep 2023
       company: Luep (Remoto, Texas, EE. UU.)
       details: |
-        Desarrollo de funcionalidades de aplicaciones web y APIs para aplicaciones móviles nativas.
-        Uso de HTML5, CSS3, PHP (Laravel/CodeIgniter), JavaScript con jQuery y MySQL.
-        Integración de Pusher para eventos en tiempo real y Firebase para notificaciones push.
+        Responsable principal del backend de una red social para comunidades cerradas, como
+        universidades e iglesias: la API que consumían sus aplicaciones móviles nativas, con PHP
+        (Laravel, CodeIgniter) y MySQL. Detección y corrección de cuellos de botella de
+        rendimiento, sobre todo consultas a la base de datos que no usaban índices. Integración
+        de Pusher para eventos en tiempo real y Firebase para notificaciones push.
 
     - role: Desarrollador Web Full Stack (Contratista)
       time: Jul 2019 - Ago 2020

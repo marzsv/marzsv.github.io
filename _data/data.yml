@@ -105,9 +105,11 @@ experiences:
       time: Aug 2020 - Sep 2023
       company: Luep (Remote, Texas, USA)
       details: |
-        Developed web application features and APIs supporting native mobile applications.
-        Utilized HTML5, CSS3, PHP (Laravel/CodeIgniter), JavaScript with jQuery, and MySQL.
-        Integrated Pusher for real-time events and Firebase for push notifications.
+        Mainly responsible for the backend of a social network for closed communities such as
+        universities and churches: the API behind its native mobile apps, built with PHP
+        (Laravel, CodeIgniter) and MySQL. Found and fixed performance bottlenecks, mostly
+        database queries that were not using indexes. Integrated Pusher for real-time events
+        and Firebase for push notifications.
 
     - role: Full Stack Web Developer (Contractor)
       time: Jul 2019 - Aug 2020
