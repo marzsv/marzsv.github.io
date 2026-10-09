@@ -65,8 +65,9 @@ career-profile:
   title: Perfil Profesional
   summary: |
     Desarrollador Backend Senior con más de 15 años de experiencia en desarrollo web
-    full-stack, especializado en PHP y Laravel. Actualmente contratista remoto para ZiffMedia, en sitios
-    de alto tráfico como Mashable, PCMag, Lifehacker y ExtremeTech. Fundador y desarrollador
+    full-stack, especializado en PHP y Laravel. Actualmente contratista remoto para ZiffMedia,
+    en sitios de alto tráfico como PCMag, CNET y ZDNet, además de Mashable, Lifehacker y
+    ExtremeTech. Fundador y desarrollador
     principal de Fiscalízame, un SaaS de facturación electrónica y punto de venta para
     negocios de El Salvador, diseñado, construido y operado de punta a punta.
 
@@ -98,11 +99,12 @@ experiences:
       time: Sep 2023 - Presente
       company: ZiffMedia (Remoto, vía InAllMedia)
       details: |
-        Cuando la empresa adquirió el contenido de Lifehacker sin su plataforma, migración de
-        todo el archivo mediante un proceso ETL (extracción, transformación y carga) y
-        construcción de la nueva plataforma en Laravel: un CMS en Nova para el equipo editorial
-        y el sitio público. Además, trabajo en otros sitios de alto tráfico como Mashable,
-        PCMag y ExtremeTech.
+        Trabajo en los sitios más grandes de la empresa: PCMag y, tras su adquisición, CNET y
+        ZDNet, incluidas sus recientes migraciones de plataforma. Cuando la empresa adquirió el
+        contenido de Lifehacker sin su plataforma, migración de todo el archivo mediante un
+        proceso ETL (extracción, transformación y carga) y construcción de la nueva plataforma
+        en Laravel: un CMS en Nova para el equipo editorial y el sitio público. Además, trabajo
+        en Mashable y ExtremeTech.
 
     - role: Desarrollador Web Full Stack (Contratista Independiente)
       time: Ago 2020 - Sep 2023
