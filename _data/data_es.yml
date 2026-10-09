@@ -140,8 +140,25 @@ certifications:
 projects:
   title: Proyectos
   intro: >
-    Proyectos de código abierto y trabajo personal.
+    Proyectos de código abierto y productos propios. Algunos viven en
+    repositorios privados, por lo que solo se enlaza su sitio público.
+  private_label: Repositorio privado
+  stack_label: "Tecnologías:"
   assignments:
+    - title: Fiscalízame
+      link: "https://fiscaliza.me"
+      private: true
+      tagline: "SaaS multiempresa para negocios salvadoreños centrado en los documentos tributarios electrónicos (DTE): emisión, firma y transmisión al Ministerio de Hacienda tanto con la API v1 como con la nueva Normativa DTE 2.0, además de un punto de venta como aplicación web progresiva con vinculación de dispositivos, inventario, listas de precios jerárquicas, gastos, cuentas por cobrar, cotizaciones, dashboards y reportes de cumplimiento de IVA e ISR. Arquitectura de módulos autocontenidos y builders de DTE compuestos por versión de esquema, validados contra los esquemas JSON oficiales con pruebas golden master."
+      stack: "PHP 8.4, Laravel 13, Livewire 3, Alpine.js, Tailwind CSS 4, PostgreSQL 17, Pest, Playwright, Docker, Brick/Money, sv-dte-signer"
+    - title: Glosia
+      link: "https://glosia.app"
+      private: true
+      tagline: "App para aprender idiomas mediante lectura extensiva: se importa un libro (EPUB) o cualquier texto y cada palabra se vuelve interactiva, con traducciones y explicaciones contextuales generadas por IA, seguimiento del nivel de conocimiento y repaso con repetición espaciada (SM-2). PWA instalable que funciona sin conexión y app para iOS, con lectura en voz alta, evaluación de pronunciación, recordatorios push, presupuesto diario de IA por cuenta y suscripciones mediante Gumroad y la App Store."
+      stack: "Next.js 16, React 19, TypeScript, Supabase (Postgres + Auth), Drizzle ORM, Tailwind CSS 4, Serwist, Capacitor, RevenueCat, Claude / Gemini / Grok, Azure Speech, Vitest"
+    - title: "@marzlabs/ai-providers"
+      private: true
+      tagline: "Paquete multiproveedor de LLMs para apps en Node.js y Next.js: la aplicación habla de modelos y de nivel de esfuerzo, nunca de SDKs. Adaptadores para Anthropic (Claude), Google (Gemini) y xAI (Grok) ocultan la salida estructurada, el caché de prompts, los rechazos y el conteo de tokens detrás de una sola interfaz, y un catálogo de modelos y precios permite medir el costo de cada llamada. Cambiar de proveedor es cambiar el id del modelo. Es el motor de las funciones de IA de Glosia."
+      stack: "TypeScript, Node.js, ESM, tsup, Vitest, SDKs de Anthropic / Google GenAI / OpenAI, GitHub Packages"
     - title: sv-dte-signer
       link: "https://github.com/marzsv/sv-dte-signer"
       tagline: "SDK en PHP para firmar digitalmente DTE (documentos tributarios electrónicos) de El Salvador. Incluye firma local sin servidores externos, firmas JWS RS512 y cobertura completa de pruebas."

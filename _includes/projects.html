@@ -29,8 +29,14 @@
       {{ project.title }}
       {% endif %}
     </span>
+    {% if project.private and projects.private_label %}
+    <small class="project-private"><i class="fas fa-lock"></i> {{ projects.private_label }}</small>
+    {% endif %}
     {% if project.tagline %}
     - <span class="project-tagline">{{ project.tagline }}</span>
+    {% endif %}
+    {% if project.stack %}
+    <p class="project-stack"><small><strong>{{ projects.stack_label }}</strong> {{ project.stack }}</small></p>
     {% endif %}
   </div><!--//item-->
   {% endfor %}
