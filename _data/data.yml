@@ -13,14 +13,15 @@ sidebar:
   avatar:
 
   # Contact information
-  # PROTECTED: Email and phone are now encrypted. To update, use tools/encrypt-contact.html
-  # email: (encrypted - see encrypted_contact below)
+  # The email is public so recruiters can reach out; the phone stays encrypted
+  # (the encrypted payload, generated with tools/encrypt-contact.html, holds both)
+  email: marz@hey.com
   # phone: (encrypted - see encrypted_contact below)
   encrypted_contact: "35wPcPPxmdchxPJNto5IiQ==:0JQTvtkRwMTLxhKp:xnueiO5s+m5otWJeQiTHGrlAi05u1bk6jxf8QgL6SHktSKkVHu8jnOnWcZtHZ60aQhqlhX+cMZhSp0C9ZDUy6A=="
   timezone: America/El_Salvador
   citizenship:
   website:
-  linkedin:
+  linkedin: marzsv
   xing:
   github: marzsv
   telegram:
@@ -61,6 +62,8 @@ career-profile:
     Currently working remotely for ZiffMedia, specializing in Laravel, PHP frameworks,
     and modern web technologies. Proven track record of delivering high-quality solutions
     for high-traffic websites including Mashable, PCMag, Lifehacker, and ExtremeTech.
+    Also founder and lead developer of Fiscalízame, an e-invoicing and point-of-sale
+    SaaS for businesses in El Salvador, built and run end to end.
 
     Practitioner of AI-first and agentic coding methodologies, integrating AI tools
     throughout the entire development lifecycle—from problem definition and planning
@@ -76,6 +79,15 @@ education:
 experiences:
   title: Experiences
   info:
+    - role: Founder & Lead Developer
+      time: Jun 2025 - Present
+      company: Fiscalízame (fiscaliza.me)
+      details: |
+        Designed, built and operate a multi-tenant SaaS for businesses in El Salvador:
+        electronic invoicing integrated with the tax authority's API, point of sale,
+        inventory, expenses and tax reports. Own the full lifecycle (product, architecture,
+        development and deployment) with Laravel, Livewire and PostgreSQL and an AI-first workflow.
+
     - role: Senior Backend Developer (Contractor)
       time: Sep 2023 - Present
       company: ZiffMedia (Remote, via InAllMedia)

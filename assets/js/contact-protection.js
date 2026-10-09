@@ -139,7 +139,8 @@ const ContactProtection = {
 
     let html = '';
 
-    if (data.email) {
+    // The encrypted payload also carries the email; skip it when it is already shown in the clear
+    if (data.email && !document.getElementById('public-email')) {
       html += `<li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto:${data.email}">${data.email}</a></li>`;
     }
 

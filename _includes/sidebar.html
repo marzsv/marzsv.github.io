@@ -40,6 +40,9 @@
 
     <div class="contact-container container-block">
         <ul class="list-unstyled contact-list">
+            {% if sidebar.email %}
+            <li class="email" id="public-email"><i class="fa-solid fa-envelope"></i><a href="mailto:{{ sidebar.email }}">{{ sidebar.email }}</a></li>
+            {% endif %}
             {% if sidebar.encrypted_contact %}
             <!-- Protected contact info - requires password -->
             <li id="protected-contact">
@@ -47,14 +50,11 @@
             </li>
             <li id="unlock-contact-btn">
                 <a href="#" onclick="ContactProtection.showUnlockModal(); return false;" style="color: #fff; opacity: 0.9;">
-                    <i class="fa-solid fa-lock"></i> Unlock contact info
+                    <i class="fa-solid fa-lock"></i> {% if sidebar.email %}{% if page.lang == 'es' %}Ver teléfono{% else %}Unlock phone number{% endif %}{% else %}Unlock contact info{% endif %}
                 </a>
             </li>
             <input type="hidden" id="encrypted-contact-data" value="{{ sidebar.encrypted_contact }}">
             {% else %}
-            {% if sidebar.email %}
-            <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: {{ sidebar.email }}">{{ sidebar.email }}</a></li>
-            {% endif %}
             {% if sidebar.phone %}
             <li class="phone"><i class="fa-solid fa-phone"></i><a href="tel:{{ sidebar.phone }}">{{ sidebar.phone }}</a></li>
             {% endif %}
