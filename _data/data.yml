@@ -147,16 +147,16 @@ projects:
     - title: Fiscalízame
       link: "https://fiscaliza.me"
       private: true
-      tagline: "Multi-tenant e-invoicing (DTE) SaaS for Salvadoran businesses: issuing, signing and transmitting documents to the Ministry of Finance, point of sale, inventory, price lists, expenses and VAT / income-tax reports. Supports MH API v1 and Normativa DTE 2.0 side by side, with a modular architecture and documents validated against the official schemas through golden-master tests. Signs with sv-dte-signer."
+      tagline: "Multi-tenant SaaS for businesses in El Salvador: electronic invoicing (issuing, signing and submitting invoices to the tax authority), point of sale, inventory, price lists, expenses and tax reports. Supports two versions of the government e-invoicing API side by side, with a modular architecture and every document validated against the official schemas through regression tests. Signs documents with sv-dte-signer (below)."
       stack: "PHP 8.4, Laravel 13, Livewire, Alpine.js, Tailwind CSS, PostgreSQL, Pest, Docker"
     - title: Glosia
       link: "https://glosia.app"
       private: true
-      tagline: "Language-learning app built on reading: import a book or text and every word becomes interactive, with contextual AI translation and spaced-repetition review (SM-2). Offline-capable PWA with subscription payments integrated through Gumroad and a per-account AI budget to keep costs under control; iOS app (Capacitor, in-app purchases via RevenueCat) in development."
+      tagline: "Language-learning app built on reading: import a book or text and every word becomes interactive, with contextual AI translation and spaced-repetition review. Installable web app (PWA) that works offline, with subscription payments integrated through Gumroad and a per-account AI budget to keep costs under control; iOS app (Capacitor, in-app purchases via RevenueCat) in development."
       stack: "Next.js, React, TypeScript, Supabase, Drizzle ORM, Tailwind CSS, Capacitor, Claude / Gemini / Grok"
     - title: "@marzlabs/ai-providers"
       private: true
-      tagline: "npm package that unifies Anthropic, Google and xAI behind a single interface: the app picks a model and reasoning effort without touching SDKs, while the package handles each provider's structured output, prompt caching and refusals, with token and cost tracking per call. Used by Glosia."
+      tagline: "npm package that puts Anthropic (Claude), Google (Gemini) and xAI (Grok) behind a single interface: switching AI provider means changing a model name, not rewriting code. It handles structured responses, prompt caching and per-call token and cost tracking. Used by Glosia."
       stack: "TypeScript, Node.js, Vitest, Anthropic / Google GenAI / OpenAI SDKs"
     - title: sv-dte-signer
       link: "https://github.com/marzsv/sv-dte-signer"
