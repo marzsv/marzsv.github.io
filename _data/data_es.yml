@@ -115,9 +115,11 @@ experiences:
       time: Jul 2019 - Ago 2020
       company: Ministry Brands (vía InAllMedia)
       details: |
-        Colaboración con product owners en análisis de requerimientos y diseño de soluciones.
-        Trabajo con equipos de UI/UX y móvil. Tecnologías: HTML5, CSS3 (SCSS),
-        framework PHP personalizado, MySQL, jQuery, Docker.
+        Desarrollo de una aplicación web para administrar iglesias y comunidades: asistencia de
+        miembros, donaciones, anuncios y reportería. Construcción de su sistema de reportes, que
+        incluía cada dato de forma condicional según lo que se buscaba, además de nuevas
+        funcionalidades y corrección de errores junto a product owners y los equipos de UI/UX y
+        móvil. Framework PHP propio, MySQL y Docker.
 
     - role: Desarrollador PHP (Contratista)
       time: Ene 2019 - Jul 2019
